@@ -18,14 +18,14 @@ const Home = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
-      {/* IMAGE AND MAIN HEADER */}
+      
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
-        {/* MAIN HEADER */}
+        
         <div className="z-10 mt-32 md:basis-3/5">
-          {/* HEADINGS */}
+          
           <motion.div
             className="md:-mt-20"
             initial="hidden"
@@ -50,7 +50,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </p>
           </motion.div>
 
-          {/* ACTIONS */}
+          
           <motion.div
             className="mt-8 flex items-center gap-8"
             initial="hidden"
@@ -75,7 +75,7 @@ const Home = ({ setSelectedPage }: Props) => {
           </motion.div>
         </div>
 
-        {/* IMAGE */}
+        
         <div
           className="flex basis-3/5 justify-center md:z-10
               md:ml-40 md:mt-16 md:justify-items-end"
@@ -84,7 +84,7 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
       </motion.div>
 
-      {/* SPONSORS */}
+      
       {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
